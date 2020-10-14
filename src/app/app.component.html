@@ -8,7 +8,7 @@
         <div class="form-group">
           <input type="text" formControlName="email" class="form-control">
         </div>
-        <app-custom-input formControlName="passwordCustomField"></app-custom-input>
+        <app-custom-input formControlName="passwordCustomField" ngDefaultControl></app-custom-input>
 
         <button class="btn btn-primary" type="submit">Submit</button>
       </form>
@@ -20,7 +20,10 @@
       <hr>
       <h3>Tasks</h3>
       <ol>
-        <li>If you open the console, there is an error. Why?</li>
+        <li>If you open the console, there is an error. Why?
+          <br>
+          <span class="answer">A: &quot;ngDefaultControl&quot; missed</span>
+        </li>
         <li>Solve the issue.</li>
         <li>Prevent form to be submitted if it's invalid.</li>
         <li>RxJS: When the user enters an email address and it matches the email pattern save it to localStorage with timestamp as a key</li>
