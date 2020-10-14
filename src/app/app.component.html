@@ -10,7 +10,7 @@
         </div>
         <app-custom-input formControlName="passwordCustomField" ngDefaultControl></app-custom-input>
 
-        <button class="btn btn-primary" type="submit">Submit</button>
+        <button class="btn btn-primary" type="submit" [disabled]="!form.valid">Submit</button>
       </form>
       <!-- End Working area -->
 
