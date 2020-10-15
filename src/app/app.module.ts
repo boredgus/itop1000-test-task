@@ -5,6 +5,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CustomInputComponent } from './custom-input/custom-input.component';
+import { SubmitService } from "./services/submit.service";
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { CustomInputComponent } from './custom-input/custom-input.component';
     AppRoutingModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [SubmitService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
